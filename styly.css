@@ -1,0 +1,261 @@
+html{
+    scroll-behavior: smooth;
+}
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:black;
+}
+ #hlavicka{
+    width:100%;
+    height:100vh;
+    background-image: url(images/pozadie.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.kontajner{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+nav ul li a::after{
+    content:"";
+    width: 0;
+    height: 3px;
+    background:#50C878 ;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.6s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.hlavicka-text{
+    color: white;
+    margin-top: 20%;
+    font-size: 25px;
+}
+.hlavicka-text h1{
+    font-size: 60px;
+    margin-top: 20px; 
+}
+.hlavicka-text  h1 span{
+    color: #50C878;
+}
+
+.omne{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .obrazek img{
+    height: auto;
+    width: 600px;
+    max-width: 100%;
+}
+.text{
+    width: 550px;
+    max-width: 100%;
+    padding: 0 10px;
+}
+.obrazek{
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+ .text h3{
+    color: #50C878;
+    font-size: 75px;
+    margin-bottom: 20px;
+}
+
+.text h5{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.textomne{
+    color:white;
+    font-size: 20px;
+}
+
+.container{
+    width: 50%;
+    height: 30vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+}
+.skill h2{
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 16px;
+}
+.progress-bar{
+    background:#959595;
+    width: 400px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.container{
+    width:100%;
+    height: 50vh;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skills h2{
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 18px;
+}
+
+.progress-bar{
+    background: white;
+    width: 600px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.progress-bar div{
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+}
+
+.progress-bar div span{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #222;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.html{
+    background: red;
+    animation: html 10s linear forwards;
+}
+.css{
+    background: blue;
+    animation: css 10s linear forwards;
+}
+.vsdc{
+    background: slateblue;
+    animation: vsdc 10s linear forwards;
+}
+.figma{
+    background: yellow;
+    animation: figma 10s linear forwards;
+}
+
+.html span{
+    border: 1px solid red;
+}
+
+.css span{
+    border: 1px solid blue;
+}
+
+.vsdc span{
+    border: 1px solid slateblue;
+}
+
+.figma span{
+    border: 1px solid yellow;
+}
+
+@keyframes html{
+    100%{
+        width:65%;
+    }
+}
+@keyframes css{
+    100%{
+        width:65%;
+    }
+}
+
+@keyframes vsdc{
+    100%{
+        width:40%;
+    }
+}
+
+@keyframes figma{
+    100%{
+        width:20%;
+    }
+}
+
+.nadpis{
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    color: #50C878;
+    font-size: 60px;
+}
+
+.nadpis1{
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    color: #50C878;
+    font-size: 60px;
+}
+
+video.center {
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
